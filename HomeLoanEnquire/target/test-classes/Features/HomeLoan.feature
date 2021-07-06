@@ -1,7 +1,6 @@
 @SubmitHomeLoanEnquire
 Feature: Submit Enquire for HomeLoan at nab.com.au
 	Scenario Outline: Submit Enquire Form with the details provided
-	
 	Given Browser is open
 	And I am at the Home Page
 	When I Click on the Personal tab
@@ -9,7 +8,7 @@ Feature: Submit Enquire for HomeLoan at nab.com.au
 	And Select Request a call back 
 	Then Navigates to Call Back Form
 	And Provide <ExistCust> <FirstName> <LastName> <State> <PhoneNo> and <Email> 
-	Then Submit Form
+	Then Submit Form and close browser
 	
 	
 	Examples:
