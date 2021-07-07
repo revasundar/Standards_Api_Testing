@@ -61,11 +61,16 @@ public class HomeLoanEnquireSteps extends TestBaseDriver {
 		homeLoanPageUI.clickRequestCallBack();
 	}
 	
+	/* @Then("Select New home loans radio button and click Next") 
+	 public void select_new_home_loans_radio_button_and_click_next() { 
+		 contactUsPageUI.clickHomeLoanRadioButton();
+		 contactUsPageUI.clickNext();
+	 } */
 	@Then("Navigates to Call Back Form")
 	public void navigates_to_call_back_form() {
 		System.out.println("CallBackForm");
 		homeLoanPageUI.NavigatesToCallBackForm();
-	}
+	} 
 	
 	@And("^Provide (.*) (.*) (.*) (.*) (.*) and (.*)$")
 	public void provide_firstName_lastName_state_phoneNo_and_email(String existCust,  String firstName, String lastName, String state, String phoneNo, String email){
@@ -79,8 +84,8 @@ public class HomeLoanEnquireSteps extends TestBaseDriver {
 		
 	}
 	
-	@Then("Submit Form")
-	public void submit_form() {
+	@Then("Submit Form and close browser")
+	public void submit_form_and_close_browser() {
 		callBackRequestForm.submitForm();
 	}
 	/*
@@ -101,11 +106,7 @@ public class HomeLoanEnquireSteps extends TestBaseDriver {
 	 * }
 	 */
 	 
-	 @Then("Select New home loans radio button and click Next") 
-	 public void select_new_home_loans_radio_button_and_click_next() { 
-		 contactUsPageUI.clickHomeLoanRadioButton();
-		 contactUsPageUI.clickNext();
-	 }
+	
 	  
 	 /* @And("I click on the Enquire now button") public void
 	 * i_click_on_the_enquire_now_button() { // Write code here that turns the

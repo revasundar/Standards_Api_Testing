@@ -6,6 +6,7 @@ Feature: Submit Enquire for HomeLoan at nab.com.au
 	When I Click on the Personal tab
 	Then I should view the menu for Personal tab and select Homeloan
 	And Select Request a call back 
+	#Then Select New home loans radio button and click Next
 	Then Navigates to Call Back Form
 	And Provide <ExistCust> <FirstName> <LastName> <State> <PhoneNo> and <Email> 
 	Then Submit Form and close browser
